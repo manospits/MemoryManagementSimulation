@@ -3,18 +3,13 @@
 #Algorithms used best-fit, next-fit, buddy
 
 Simulation runs by creating virtual process of size in range [lo,hi] using
-
 uniform distribution and each process has to stay in memory for T cycles 2k+1
-
 times where k range is [2,20]. The creation event of each  VP happens in t cycles
-
 from the last creation event where t is the result of poisson distribution.
 
-Compile with make
+Compile with make and run with
 
-run with
-
-mem_sim --lo vp_lowest_size --hi vp_highest_size -t creation_time -T calculations_time -S memory_size --time cycles -a algorithm
+./mem_sim --lo vp_lowest_size --hi vp_highest_size -t creation_time -T calculations_time -S memory_size --time cycles -a algorithm
 
 algorithm can be 'b' for best-fit 'u' for buddy 'n' for next-fit
 
